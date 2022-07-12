@@ -1,11 +1,48 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "Basket.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Basket.Domain.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Basket.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Basket.Domain.dll": {}
+        }
+      },
+      "Basket.Domain.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Basket.Domain.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Basket.Domain.Core.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Basket.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Basket.Domain/Basket.Domain.csproj",
+      "msbuildProject": "../Basket.Domain/Basket.Domain.csproj"
+    },
+    "Basket.Domain.Core/1.0.0": {
+      "type": "project",
+      "path": "../Basket.Domain.Core/Basket.Domain.Core.csproj",
+      "msbuildProject": "../Basket.Domain.Core/Basket.Domain.Core.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "Basket.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\ebaht\\.nuget\\packages\\": {}
@@ -33,7 +70,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\ebaht\\Downloads\\Basket\\Basket\\Basket.Domain\\Basket.Domain.csproj": {
+              "projectPath": "C:\\Users\\ebaht\\Downloads\\Basket\\Basket\\Basket.Domain\\Basket.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

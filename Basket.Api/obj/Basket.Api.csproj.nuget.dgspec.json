@@ -173,7 +173,11 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\ebaht\\Downloads\\Basket\\Basket\\Basket.Domain\\Basket.Domain.csproj": {
+                "projectPath": "C:\\Users\\ebaht\\Downloads\\Basket\\Basket\\Basket.Domain\\Basket.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

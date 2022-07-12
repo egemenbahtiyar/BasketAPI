@@ -25,6 +25,9 @@
         }
       },
       "Basket.Definition/1.0.0": {
+        "dependencies": {
+          "Basket.Domain": "1.0.0"
+        },
         "runtime": {
           "Basket.Definition.dll": {}
         }

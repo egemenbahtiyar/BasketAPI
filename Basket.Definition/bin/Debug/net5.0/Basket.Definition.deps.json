@@ -7,14 +7,40 @@
   "targets": {
     ".NETCoreApp,Version=v5.0": {
       "Basket.Definition/1.0.0": {
+        "dependencies": {
+          "Basket.Domain": "1.0.0"
+        },
         "runtime": {
           "Basket.Definition.dll": {}
+        }
+      },
+      "Basket.Domain/1.0.0": {
+        "dependencies": {
+          "Basket.Domain.Core": "1.0.0"
+        },
+        "runtime": {
+          "Basket.Domain.dll": {}
+        }
+      },
+      "Basket.Domain.Core/1.0.0": {
+        "runtime": {
+          "Basket.Domain.Core.dll": {}
         }
       }
     }
   },
   "libraries": {
     "Basket.Definition/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Basket.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Basket.Domain.Core/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

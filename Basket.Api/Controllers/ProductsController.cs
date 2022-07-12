@@ -25,5 +25,13 @@ namespace Basket.Api.Controllers
 
            return Ok();
         }
+
+        [HttpDelete]
+        public async Task<IActionResult> DeleteProduct(DeleteProductApiRequest request,
+            CancellationToken cancellationToken)
+        {
+            await _productService.DeleteProduct(request.ToApplicationRequest(), cancellationToken);
+            return Ok();
+        }
     }
 }

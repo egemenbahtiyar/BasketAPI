@@ -10,4 +10,8 @@
       <Folder Include="Response" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\Basket.Domain\Basket.Domain.csproj" />
+    </ItemGroup>
+
 </Project>
