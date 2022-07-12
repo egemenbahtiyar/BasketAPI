@@ -1,0 +1,17 @@
+/Users/berkay/RiderProjects/Basket/Basket.Infrastructure/bin/Debug/net5.0/Basket.Infrastructure.deps.json
+/Users/berkay/RiderProjects/Basket/Basket.Infrastructure/bin/Debug/net5.0/Basket.Infrastructure.dll
+/Users/berkay/RiderProjects/Basket/Basket.Infrastructure/bin/Debug/net5.0/Basket.Infrastructure.pdb
+/Users/berkay/RiderProjects/Basket/Basket.Infrastructure/bin/Debug/net5.0/Basket.Domain.Core.dll
+/Users/berkay/RiderProjects/Basket/Basket.Infrastructure/bin/Debug/net5.0/Basket.Domain.dll
+/Users/berkay/RiderProjects/Basket/Basket.Infrastructure/bin/Debug/net5.0/Basket.Domain.pdb
+/Users/berkay/RiderProjects/Basket/Basket.Infrastructure/bin/Debug/net5.0/Basket.Domain.Core.pdb
+/Users/berkay/RiderProjects/Basket/Basket.Infrastructure/obj/Debug/net5.0/Basket.Infrastructure.csproj.AssemblyReference.cache
+/Users/berkay/RiderProjects/Basket/Basket.Infrastructure/obj/Debug/net5.0/Basket.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/berkay/RiderProjects/Basket/Basket.Infrastructure/obj/Debug/net5.0/Basket.Infrastructure.AssemblyInfoInputs.cache
+/Users/berkay/RiderProjects/Basket/Basket.Infrastructure/obj/Debug/net5.0/Basket.Infrastructure.AssemblyInfo.cs
+/Users/berkay/RiderProjects/Basket/Basket.Infrastructure/obj/Debug/net5.0/Basket.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/berkay/RiderProjects/Basket/Basket.Infrastructure/obj/Debug/net5.0/Basket.Infrastructure.csproj.CopyComplete
+/Users/berkay/RiderProjects/Basket/Basket.Infrastructure/obj/Debug/net5.0/Basket.Infrastructure.dll
+/Users/berkay/RiderProjects/Basket/Basket.Infrastructure/obj/Debug/net5.0/refint/Basket.Infrastructure.dll
+/Users/berkay/RiderProjects/Basket/Basket.Infrastructure/obj/Debug/net5.0/Basket.Infrastructure.pdb
+/Users/berkay/RiderProjects/Basket/Basket.Infrastructure/obj/Debug/net5.0/ref/Basket.Infrastructure.dll

@@ -1,0 +1,12 @@
+/Users/berkay/RiderProjects/Basket/Basket.Definition/bin/Debug/net5.0/Basket.Definition.deps.json
+/Users/berkay/RiderProjects/Basket/Basket.Definition/bin/Debug/net5.0/Basket.Definition.dll
+/Users/berkay/RiderProjects/Basket/Basket.Definition/bin/Debug/net5.0/Basket.Definition.pdb
+/Users/berkay/RiderProjects/Basket/Basket.Definition/obj/Debug/net5.0/Basket.Definition.csproj.AssemblyReference.cache
+/Users/berkay/RiderProjects/Basket/Basket.Definition/obj/Debug/net5.0/Basket.Definition.GeneratedMSBuildEditorConfig.editorconfig
+/Users/berkay/RiderProjects/Basket/Basket.Definition/obj/Debug/net5.0/Basket.Definition.AssemblyInfoInputs.cache
+/Users/berkay/RiderProjects/Basket/Basket.Definition/obj/Debug/net5.0/Basket.Definition.AssemblyInfo.cs
+/Users/berkay/RiderProjects/Basket/Basket.Definition/obj/Debug/net5.0/Basket.Definition.csproj.CoreCompileInputs.cache
+/Users/berkay/RiderProjects/Basket/Basket.Definition/obj/Debug/net5.0/Basket.Definition.dll
+/Users/berkay/RiderProjects/Basket/Basket.Definition/obj/Debug/net5.0/refint/Basket.Definition.dll
+/Users/berkay/RiderProjects/Basket/Basket.Definition/obj/Debug/net5.0/Basket.Definition.pdb
+/Users/berkay/RiderProjects/Basket/Basket.Definition/obj/Debug/net5.0/ref/Basket.Definition.dll

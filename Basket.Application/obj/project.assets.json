@@ -1,0 +1,171 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "Basket.Definition/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Basket.Definition.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Basket.Definition.dll": {}
+        }
+      },
+      "Basket.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Basket.Domain.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Basket.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Basket.Domain.dll": {}
+        }
+      },
+      "Basket.Domain.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Basket.Domain.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Basket.Domain.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0": {
+      "sha512": "xlzi2IYREJH3/m6+lUrQlujzX8wDitm4QGnUu6kUXTQAWPuZY8i+ticFJbzfqaetLA6KR/rO6Ew/HuYD+bxifg==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.DependencyInjection.Abstractions.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Basket.Definition/1.0.0": {
+      "type": "project",
+      "path": "../Basket.Definition/Basket.Definition.csproj",
+      "msbuildProject": "../Basket.Definition/Basket.Definition.csproj"
+    },
+    "Basket.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Basket.Domain/Basket.Domain.csproj",
+      "msbuildProject": "../Basket.Domain/Basket.Domain.csproj"
+    },
+    "Basket.Domain.Core/1.0.0": {
+      "type": "project",
+      "path": "../Basket.Domain.Core/Basket.Domain.Core.csproj",
+      "msbuildProject": "../Basket.Domain.Core/Basket.Domain.Core.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "Basket.Definition >= 1.0.0",
+      "Basket.Domain >= 1.0.0",
+      "Microsoft.Extensions.DependencyInjection.Abstractions >= 6.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\ebaht\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\ebaht\\Downloads\\Basket\\Basket\\Basket.Application\\Basket.Application.csproj",
+      "projectName": "Basket.Application",
+      "projectPath": "C:\\Users\\ebaht\\Downloads\\Basket\\Basket\\Basket.Application\\Basket.Application.csproj",
+      "packagesPath": "C:\\Users\\ebaht\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ebaht\\Downloads\\Basket\\Basket\\Basket.Application\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\ebaht\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {
+            "C:\\Users\\ebaht\\Downloads\\Basket\\Basket\\Basket.Definition\\Basket.Definition.csproj": {
+              "projectPath": "C:\\Users\\ebaht\\Downloads\\Basket\\Basket\\Basket.Definition\\Basket.Definition.csproj"
+            },
+            "C:\\Users\\ebaht\\Downloads\\Basket\\Basket\\Basket.Domain\\Basket.Domain.csproj": {
+              "projectPath": "C:\\Users\\ebaht\\Downloads\\Basket\\Basket\\Basket.Domain\\Basket.Domain.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": {
+            "target": "Package",
+            "version": "[6.0.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
