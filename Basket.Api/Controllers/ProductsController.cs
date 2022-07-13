@@ -1,14 +1,17 @@
+using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 using Basket.Api.Extensions;
+using Basket.Application.Requests;
 using Basket.Application.Services;
 using Basket.Definition.Request;
+using Basket.Domain;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Basket.Api.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("[controller]/[action]")]
     public class ProductsController : ControllerBase
     {
         private readonly IProductService _productService;
@@ -32,6 +35,21 @@ namespace Basket.Api.Controllers
         {
             await _productService.DeleteProduct(request.ToApplicationRequest(), cancellationToken);
             return Ok();
+        }
+
+        [HttpGet]
+        public async Task<ActionResult<List<Product>>> SearchProducts(CancellationToken cancellationToken)
+        {
+            var products = await _productService.SearchProducts(cancellationToken);
+            return Ok(products);
+        }
+
+        [HttpGet]
+        public async Task<ActionResult<Product>> SearchProduct([FromQuery]SearchProductApiRequest request,
+            CancellationToken cancellationToken)
+        {
+            var product = await _productService.SearchProduct(request.ToApplicationRequest(), cancellationToken);
+            return Ok(product);
         }
     }
 }
