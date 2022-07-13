@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "d03NSXQCk3UAXMnhAqM6zouFZg2SmWgiyPuOCPzDTcayoia2nV17OEm+s/nClh+7KUjnarY6f6g4qZi0+gRLkw==",
+  "dgSpecHash": "qjv//oQ4owvhw/4hgpx1qLi/QUWAUuTKZm1HHig+8tNo1qwoLX5qZr+JZFdmVcZGTJycwg2MvMC7V9MI54nTnw==",
   "success": true,
   "projectFilePath": "C:\\Users\\ebaht\\Downloads\\Basket\\Basket\\Basket.Application\\Basket.Application.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\ebaht\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512"
+    "C:\\Users\\ebaht\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\ebaht\\.nuget\\packages\\mongodb.bson\\2.15.1\\mongodb.bson.2.15.1.nupkg.sha512",
+    "C:\\Users\\ebaht\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

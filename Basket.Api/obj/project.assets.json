@@ -383,6 +383,9 @@
       "Basket.Domain.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "MongoDB.Bson": "2.15.1"
+        },
         "compile": {
           "bin/placeholder/Basket.Domain.Core.dll": {}
         },

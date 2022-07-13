@@ -199,6 +199,9 @@
         }
       },
       "Basket.Domain.Core/1.0.0": {
+        "dependencies": {
+          "MongoDB.Bson": "2.15.1"
+        },
         "runtime": {
           "Basket.Domain.Core.dll": {}
         }

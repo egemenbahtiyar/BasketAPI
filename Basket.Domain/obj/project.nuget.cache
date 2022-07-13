@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "PQ9n+7hSYuh2ieeQBTh/0E5sA+JpUhPy2nmE13a+uXXdglHcjGv0VAy7gIBozlE3N5bGMLGzjviSqsAyrXe6oQ==",
+  "dgSpecHash": "0nmhmN0qVhode4dclIFJtYbiwSNIImdkuzLr8AUWfSOEqyi7UUhs90YsbpSDFDgqTgulpFA3jCap7jRlEL9FMw==",
   "success": true,
   "projectFilePath": "C:\\Users\\ebaht\\Downloads\\Basket\\Basket\\Basket.Domain\\Basket.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\ebaht\\.nuget\\packages\\mongodb.bson\\2.15.1\\mongodb.bson.2.15.1.nupkg.sha512",
+    "C:\\Users\\ebaht\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
