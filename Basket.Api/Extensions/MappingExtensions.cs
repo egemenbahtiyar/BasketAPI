@@ -38,5 +38,12 @@ namespace Basket.Api.Extensions
                 ProductId = request.ProductId
             };
         }
+        public static SearchUserApplicationRequest ToApplicationRequest(this SearchUserApiRequest request)
+        {
+            return new SearchUserApplicationRequest()
+            {
+                UserId = request.UserId
+            };
+        }
     }
 }

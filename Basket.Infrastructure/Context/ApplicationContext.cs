@@ -17,6 +17,7 @@ namespace Basket.Infrastructure.Context
 
         public IMongoCollection<Product> Products => _database.GetCollection<Product>("Products");
         public IMongoCollection<Domain.Basket> Baskets => _database.GetCollection<Domain.Basket>("Baskets");
+        public IMongoCollection<User> Users => _database.GetCollection<User>("Users");
   
     }
 }

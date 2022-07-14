@@ -11,6 +11,7 @@ namespace Basket.Infrastructure
         {
             services.AddScoped<IApplicationContext, ApplicationContext>();
             services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();
             
             return services;
         }
