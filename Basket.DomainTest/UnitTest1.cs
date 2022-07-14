@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Threading;
 using Basket.Api.Controllers;
 using Basket.Application.Requests;
@@ -28,19 +29,21 @@ namespace Basket.DomainTest
             var result = await pro.SearchProduct(apRequest, cT);  
             Assert.Equal(expectedProduct, result);  
         }  
-        /*[Fact]  
-        public async void GetEmployeeDetails()  
+        [Fact]  
+        public async void GetAllProducts()  
         {  
-            var employeeDTO = new Employee()  
-            {  
-                Id = 1,  
-                Name = "JK",  
-                Desgination = "SDE"  
-            };  
-            mock.Setup(p => p.GetEmployeeDetails(1)).ReturnsAsync(employeeDTO);  
-            EmployeeController emp = new EmployeeController(mock.Object);  
-            var result = await emp.GetEmployeeDetails(1);  
-            Assert.True(employeeDTO.Equals(result));  
-        }  */
+            var cT = new CancellationToken();
+            var expectedProductList = new List<Product>();
+            var p1 = Product.CreateProduct("item2", 57.0, 4);
+            var p2 = Product.CreateProduct("urun-1", 98.0, 4);
+            var p3 = Product.CreateProduct("urun-56", 92.0, 5);
+            expectedProductList.Add(p1);
+            expectedProductList.Add(p2);
+            expectedProductList.Add(p3);
+            mock.Setup(p => p.SearchProducts(cT)).ReturnsAsync(expectedProductList);
+            ProductService pro = new ProductService(mock.Object);
+            var result = await pro.SearchProducts(cT);  
+            Assert.Equal(expectedProductList, result); 
+        }
     }
 }
