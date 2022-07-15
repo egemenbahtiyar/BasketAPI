@@ -14,6 +14,9 @@ namespace Basket.DomainTest
 {
     public class UnitTest1
     {
+        //It.IsAny<int>() Opsiyonel parameter
+        //Verify ile kaç kez çalıştığına bakabilirsin
+        //mathematics.Verify(x => x.Sum(1, 2), Times.AtLeast(2));
         public Mock<IProductRepository> mock = new Mock<IProductRepository>();
         [Fact]  
         public async void GetProductById()
