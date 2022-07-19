@@ -22,7 +22,7 @@ namespace Basket.Application.Services
 
         public async Task UpdateProduct(UpdateProductApplicationRequest request, CancellationToken cancellationToken)
         {
-            await _productRepository.UpdateProduct(request.ProductId, request.Product, cancellationToken);
+            await _productRepository.UpdateProduct(request.ProductId, product =>product.UpdateProduct(request.ProductName,request.Price,request.Quantity,request.ProductId) , cancellationToken);
         }
 
         public async Task DeleteProduct(DeleteProductApplicationRequest request, CancellationToken cancellationToken)

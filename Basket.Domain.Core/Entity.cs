@@ -6,7 +6,7 @@ namespace Basket.Domain.Core
     public class Entity
     {
         [BsonId]
-        public Guid UniqueId { get; }
+        public Guid UniqueId { get; set; }
 
         public Entity()
         {

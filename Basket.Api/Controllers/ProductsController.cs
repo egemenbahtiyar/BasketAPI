@@ -23,6 +23,7 @@ namespace Basket.Api.Controllers
         }
 
         [HttpPost]
+        [Route("createProduct")]
         public async Task<IActionResult> CreateProduct(CreateProductApiRequest request, CancellationToken cancellationToken)
         {
            await _productService.CreateProduct(request.ToApplicationRequest(), cancellationToken);
@@ -31,30 +32,43 @@ namespace Basket.Api.Controllers
         }
 
         [HttpDelete]
+        [Route("deleteProduct")]
         public async Task<IActionResult> DeleteProduct(DeleteProductApiRequest request,
             CancellationToken cancellationToken)
         {
             await _productService.DeleteProduct(request.ToApplicationRequest(), cancellationToken);
+            
             return Ok();
         }
 
         [HttpGet]
-        public async Task<ActionResult<List<Product>>> SearchProducts(CancellationToken cancellationToken)
+        [Route("searchProducts")]
+        public async Task<IActionResult> SearchProducts(CancellationToken cancellationToken)
         {
             var products = await _productService.SearchProducts(cancellationToken);
+            
             return Ok(products);
         }
 
         [HttpGet]
-        [Route("{productId}")]
-        public async Task<ActionResult<Product>> SearchProduct(Guid productId,
+        [Route("searchProduct/{productId}")]
+        public async Task<IActionResult> SearchProduct(Guid productId,
             CancellationToken cancellationToken)
         {
             var product = await _productService.SearchProduct(new SearchProductApplicationRequest()
             {
                 ProductId = productId
             }, cancellationToken);
+            
             return Ok(product);
+        }
+        [HttpPut]
+        [Route("updateProduct")]
+        public async Task<IActionResult> UpdateProduct(UpdateProductApiRequest request, CancellationToken cancellationToken)
+        {
+            await _productService.UpdateProduct(request.ToApplicationRequest(), cancellationToken);
+            
+            return Ok();
         }
     }
 }

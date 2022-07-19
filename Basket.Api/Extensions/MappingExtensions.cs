@@ -28,7 +28,9 @@ namespace Basket.Api.Extensions
             return new UpdateProductApplicationRequest()
             {
                 ProductId = request.ProductId,
-                Product = request.Product
+                ProductName = request.ProductName,
+                Quantity = request.Quantity,
+                Price = request.Price
             };
         }
         public static SearchProductApplicationRequest ToApplicationRequest(this SearchProductApiRequest request)

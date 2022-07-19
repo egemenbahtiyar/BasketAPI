@@ -6,6 +6,8 @@ namespace Basket.Application.Requests
     public class UpdateProductApplicationRequest
     {
         public Guid ProductId { get; set; }
-        public Action<Product> Product { get; set; }
+        public string ProductName { get; set; }
+        public double Price { get; set; }
+        public int Quantity { get; set; }
     }
 }

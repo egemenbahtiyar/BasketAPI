@@ -1,3 +1,4 @@
+using System;
 using Basket.Domain.Core;
 
 namespace Basket.Domain
@@ -17,11 +18,12 @@ namespace Basket.Domain
         }
 
 
-        public Product UpdateProduct(string productName, double price, int quantity)
+        public Product UpdateProduct(string productName, double price, int quantity, Guid uniqueId)
         {
             ProductName = productName;
             Price = price;
             Quantity = quantity;
+            UniqueId = uniqueId;
             return this;
         }
 
