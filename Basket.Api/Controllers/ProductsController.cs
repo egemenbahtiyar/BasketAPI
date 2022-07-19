@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
@@ -11,7 +12,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Basket.Api.Controllers
 {
     [ApiController]
-    [Route("[controller]/[action]")]
+    [Route("[controller]")]
     public class ProductsController : ControllerBase
     {
         private readonly IProductService _productService;
@@ -45,10 +46,14 @@ namespace Basket.Api.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<Product>> SearchProduct([FromQuery]SearchProductApiRequest request,
+        [Route("{productId}")]
+        public async Task<ActionResult<Product>> SearchProduct(Guid productId,
             CancellationToken cancellationToken)
         {
-            var product = await _productService.SearchProduct(request.ToApplicationRequest(), cancellationToken);
+            var product = await _productService.SearchProduct(new SearchProductApplicationRequest()
+            {
+                ProductId = productId
+            }, cancellationToken);
             return Ok(product);
         }
     }

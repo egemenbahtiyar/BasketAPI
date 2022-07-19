@@ -19,17 +19,16 @@ namespace Basket.DomainTest
         //mathematics.Verify(x => x.Sum(1, 2), Times.AtLeast(2));
         public Mock<IProductRepository> mock = new Mock<IProductRepository>();
         [Fact]  
-        public async void GetProductById()
+        public async void GetProductById() //
         {
-            var cT = new CancellationToken();
-            var apRequest = new SearchProductApplicationRequest()
+            var request = new SearchProductApplicationRequest()
             {
                 ProductId = new Guid("0CA31F19-B050-4965-95E8-3B58A3004C06")
             };
             var expectedProduct = Product.CreateProduct("item2", 57.0, 4);
-            mock.Setup(p => p.SearchProduct(new Guid("0CA31F19-B050-4965-95E8-3B58A3004C06"),cT)).ReturnsAsync(expectedProduct);  
+            mock.Setup(p => p.SearchProduct(It.IsAny<Guid>(),It.IsAny<CancellationToken>())).ReturnsAsync(expectedProduct);  
             ProductService pro = new ProductService(mock.Object);
-            var result = await pro.SearchProduct(apRequest, cT);  
+            var result = await pro.SearchProduct(request, It.IsAny<CancellationToken>());  
             Assert.Equal(expectedProduct, result);  
         }  
         [Fact]  

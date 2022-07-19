@@ -37,7 +37,9 @@ namespace Basket.Application.Services
 
         public async Task<Product> SearchProduct(SearchProductApplicationRequest request, CancellationToken cancellationToken)
         {
-            return await _productRepository.SearchProduct(request.ProductId, cancellationToken);
+            var product =  await _productRepository.SearchProduct(request.ProductId, cancellationToken);
+
+            return product;
         }
     }
 }
