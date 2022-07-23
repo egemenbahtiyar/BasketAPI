@@ -66,9 +66,9 @@ namespace Basket.Api.Controllers
         [Route("getBasket")]
         public async Task<IActionResult> GetBasket([FromQuery]GetBasketApiRequest request, CancellationToken cancellationToken)
         {
-            await _basketService.GetBasket(request.ToApplicationRequest(), cancellationToken);
+            var basket = await _basketService.GetBasket(request.ToApplicationRequest(), cancellationToken);
 
-            return Ok();
+            return Ok(basket);
         }
     }
 }
