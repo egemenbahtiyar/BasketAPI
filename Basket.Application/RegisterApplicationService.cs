@@ -9,6 +9,7 @@ namespace Basket.Application
         {
             service.AddScoped<IProductService, ProductService>();
             service.AddScoped<IUserService, UserService>();
+            service.AddScoped<IBasketService, BasketService>();
             
             return service;
         }
