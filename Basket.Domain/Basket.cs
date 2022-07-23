@@ -28,9 +28,10 @@ namespace Basket.Domain
             return this;
         }
 
-        public void ClearBasket()
+        public Basket ClearBasket()
         {
             BasketItems.Clear();
+            return this;
         }
 
         public Basket RemoveBasketItem(Guid productId)
